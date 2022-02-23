@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project FFC 2 - Survey Form</title>
+</head>
+<body>
+    <h1 id="title">
+        Survey form created for FCC Responsive Design project
+    </h1>
+    <p id="description">
+        The purpose of this survey form is to evaluate the quality of the provided service. Useful for a service provider company, e.g.: e-commerce, bank.
+    </p>
+    <form action="mailto:hola@javierd.com" method="post" enctype="text/plain" id="survey-form">
+        <p></p>
+        <table>
+            <tr>
+                <td><label id="name-label">Your Name: </label></td>
+                <td><input placeholder="Your Name" type="text" name="yourName" id="name" required></td>
+            </tr>
+            <tr>
+                <td><label id="email-label">Your E-mail: </label></td>
+                <td><input placeholder="Your E-mail" type="email" name="yourEmail" id="email" required></td>
+            </tr>
+            <tr>
+            <tr>
+                <td><label for="item-select">Choose the item you bought from us:</label></td>
+                <td>
+                    <select name="pets" id="dropdown">
+                        <option value="">--Please choose an option--</option>
+                        <option value="dog">Item 1 - name</option>
+                        <option value="cat">Item 2 - name</option>
+                        <option value="hamster">Item 3 - name</option>
+                        <option value="parrot">Item 4 - name</option>
+                        <option value="spider">Item 5 - name</option>
+                    </select>
+                </td>  
+            </tr>
+            <tr>
+                <td><label id="number-label">Your Review: </label></td>
+                <td><input placeholder="Enter a review value (from 0 to 10):" type="number" id="number" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td><label >Your Message: </label></td>
+                <td><textarea name="yourMessage" id="" cols="27" rows="10" placeholder="Your Comment"></textarea></td>
+            </tr>
+        </table>        
+        
+        <h4>To whom will you recommend this product? (Select all that apply)</h4>
+        <div>
+            <label> 
+                <input
+                 type="checkbox"
+                 name="Newsletter1" 
+                 value="Newsletter1">
+                Family 
+            </label>
+            <br>
+            <input type="checkbox" name="Newsletter2" value="Newsletter2"> Friends <br>
+            <input type="checkbox" name="Newsletter3" value="Newsletter3"> Adult Man <br>
+            <input type="checkbox" name="Newsletter3" value="Newsletter3"> Adult Woman <br>
+            <input type="checkbox" name="Newsletter3" value="Newsletter3"> Youngster <br>
+        </div>
+        <br>
+        <h4>How do you qualify the shipping time?</h4>
+        <div>
+            <input type="radio" name="RadioVal" value="RadioVal1" checked> 
+            Great  <br>
+            <input type="radio" name="RadioVal" value="RadioVal2"> 
+            Good <br>  
+            <input type="radio" name="RadioVal" value="RadioVal3"> 
+            Average <br>
+            <input type="radio" name="RadioVal" value="RadioVal3"> 
+            Bad <br>
+            <input type="radio" name="RadioVal" value="RadioVal3"> 
+            Awful <br>
+        </div>
+        <p> </p>
+        <div>
+            <input type="submit" value="Send" id="submit">
+        </div>
+        <p></p>
+
+    </form>
+    
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

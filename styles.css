@@ -1,0 +1,23 @@
+#submit {
+    background-color: chocolate;
+    color: white;
+}
+
+body {
+    background-color: papayawhip;
+
+}
+
+form {
+    background-color: bisque;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+h1, p {
+    display: grid;
+    justify-content: center;
+}
